@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid #a4b5e7; 
+  border-radius: 10px; 
+  padding: 20px; 
+}
+.quantidade-tarefas {
+  margin-top: 20px; /* Margem superior para separar da lista de tarefas */
+  text-align: center; /* Centraliza o texto */
+  font-size: 16px; /* Tamanho da fonte */
+  color: #ffffff; /* Cor do texto */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(67, 66, 66);
+}
+
+li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #ebe9e9;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+li:hover {
+  background: #a9a3d7;
+}
+
+.checked {
+  background: hsl(0, 4%, 86%);
+  text-decoration: line-through;
+}
+
+.checked::before {
+  content: '✔';
+  position: absolute;
+  top: 10px;
+  left: 16px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  cursor: pointer;
+  color:rgb(0, 0, 0)
+}
+
+.close:hover {
+  background-color: blue;
+  color: white;
+}
+
+.header {
+  background-color: rgb(29, 139, 236);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.input-container input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-container .addBtn {
+  padding: 10px;
+  background: #d9d9d9;
+  color: brown;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.input-container .addBtn:hover {
+  background-color: brown;
+} 

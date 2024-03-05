@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Lista de Tarefas</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><strong>Lista de Tarefas</strong></h1>
+      <div class="input-container">
+        <input type="text" id="myInput" placeholder="Add Uma Nova Tarefa...">
+        <span onclick="adicionarTarefa()" class="addBtn">ADICIONAR</span>
+      </div>
+      <div id="quantidadeTarefas" class="quantidade-tarefas"></div>
+    </div>
+
+    <ul id="myUL">
+      <li>
+        <input type="checkbox" id="tarefa1">
+        <label for="tarefa1">Estudar HTML</label>
+        <span class="close" onclick="excluirTarefa(this)">X</span>
+      </li>
+      <li>
+        <input type="checkbox" id="tarefa2">
+        <label for="tarefa2">Estudar CSS</label>
+        <span class="close" onclick="excluirTarefa(this)">X</span>
+      </li>
+      <li>
+        <input type="checkbox" id="tarefa3">
+        <label for="tarefa3">Estudar JavaScript</label>
+        <span class="close" onclick="excluirTarefa(this)">X</span>
+      </li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
